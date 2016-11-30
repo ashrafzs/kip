@@ -1,0 +1,247 @@
+.modal-backdrop {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(37, 50, 65, 0.8) !important;
+}
+
+.modal-open {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 40%;
+  max-width: 90%;
+  max-height: 95%;
+  overflow-x: auto;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+  .modal--withicon & {
+    padding-left: 110px;
+    padding-bottom: 30px;
+  }
+
+  background-color: #FFF;
+  padding: 15px 20px;
+}
+
+.modal_icon {
+  width: 92px;
+  height: 57px;
+  position: absolute;
+  top: 45px;
+  left: 18px;
+
+  &--gears {
+    background-image: url("../img/maintenance_gears.png");
+    background-size: cover;
+  }
+}
+
+.modal-large {
+  .modal-open {
+    height: 80%;
+    width: 80%;
+    max-width: 1240px;
+    align-items: stretch;
+    display: flex;
+  }
+
+  .modal-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    .enketo-holder {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    iframe {
+      flex-grow: 1;
+      border: 1px solid white;
+      width: 100%;
+    }
+  }
+}
+
+.modal-title {
+  margin: 0px;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.modal-header {
+  color: #2196F3;
+  min-height: 30px;
+  margin: -15px -20px 0;
+}
+
+.modal-body {
+  padding: 20px 15px;
+
+  .modal-titled & {
+    padding: 30px 15px;
+  }
+}
+
+.modal-footer {
+  min-height: 60px;
+  padding-top: 10px;
+}
+
+$modalXcolor: #d8d8d8;
+
+.modal-x {
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  right: 0;
+  padding: 25px;
+  font-size: 20px;
+  color: $modalXcolor;
+  cursor: pointer;
+
+  &:hover {
+    color: darken($modalXcolor, 20%);
+  }
+}
+
+.modal-footer {
+  text-align: right;
+
+  button {
+    @extend .mdl-button, .mdl-button--colored, .mdl-button--raised;
+    text-transform: uppercase;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.enketo-holder {
+  .enketo-loading-message {
+    p {
+      text-align: center;
+      font-weight: 600;
+    }
+
+    i:before {
+      color: #3FA2EE;
+      font-size: 20px;
+    }
+  }
+}
+
+$errorColor: #E60C0C;
+
+.modal-error {
+  color: darken($errorColor, 20%);
+
+  .modal-title {
+    background-color: $errorColor;
+    color: mix(#fff, $errorColor, 95%);
+  }
+
+  .modal-x {
+    color: mix(#fff, $errorColor, 95%);
+  }
+}
+
+.touch .enketo-holder {
+  width: 94%;
+  left: 3%;
+  margin-left: 0px;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+}
+
+.enketo-iframe-icon {
+  color: #fff;
+  background-image: url("~/jquery-ui/themes/humanity/images/ui-icons_ffffff_256x240.png");
+  background-color: #C6CBD0;
+  background-position: -81px -129px;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  border-radius: 3px;
+  z-index: 1000;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+// alertify modal styling
+
+.alertify .ajs-header {
+  margin: -10px;
+  padding: 10px;
+  padding-bottom: 20px;
+  font-size: 18px;  
+  color: #2196F3;
+}
+
+.alertify.ajs-closable .ajs-commands button.ajs-close {
+  background:transparent;
+}
+
+.alertify.ajs-closable .ajs-commands button.ajs-close:before {
+  content: '\E806';
+  font-family: 'k-icons';
+  font-size: 18px;
+  color:#D8D8D8;
+}
+
+.alertify.ajs-closable .ajs-commands {
+  margin:0px;
+  top: 5px;
+  right: 5px;
+  padding:10px;
+}
+
+.alertify .ajs-content {
+  pre {
+    background: #F9F9F9;
+    max-height: 250px;
+    overflow: auto;
+    padding:15px;
+  }
+  code {
+    white-space: normal;
+  }
+}
+
+.alertify .ajs-footer {
+  padding:15px;
+
+  .ajs-buttons.ajs-primary {
+    text-align: right;
+  }
+
+  button {
+    @extend .mdl-button;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 20px;
+    &.ajs-ok {
+      padding-left: 40px;
+      padding-right: 40px;
+      @extend .mdl-button--colored, .mdl-button--raised;
+    }
+    &.ajs-cancel {
+      @extend .mdl-button--bordered;
+    }
+  }
+}

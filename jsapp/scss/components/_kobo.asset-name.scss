@@ -1,0 +1,18 @@
+.asset-name {
+  &--empty {
+    font-style: italic;
+  }
+
+  small {
+    color: #bbb;
+    margin-left: 5px;
+    font-size: smaller;
+    font-style: italic;
+  }
+}
+
+.sidebar-asset-name {
+  &--noname {
+    font-style: italic;
+  }
+}

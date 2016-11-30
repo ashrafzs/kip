@@ -1,0 +1,72 @@
+# File for use with `pip-compile`; see https://github.com/nvie/pip-tools
+# https://github.com/bndr/pipreqs is a handy utility, too.
+
+# Custom pyxform
+-e git+https://github.com/kobotoolbox/pyxform.git@6dfff060fc2ad6c575c6a7d953c381d2180e6833#egg=pyxform
+
+# Formpack
+-e git+https://github.com/kobotoolbox/formpack.git@1.4#egg=formpack
+
+# More up-to-date version of django-digest than PyPI seems to have.
+# Also, python-digest is an unlisted dependency thereof.
+python-digest==1.7
+-e git+https://github.com/dimagi/django-digest@0eb1c921329dd187c343b61acfbec4e98450136e#egg=django_digest
+
+# Regular PyPI packages
+Django<1.9
+Fabric
+Markdown
+Pygments
+amqp
+anyjson
+billiard
+boto
+celery
+dj-static
+dj-database-url
+django-braces
+django-debug-toolbar
+django-extensions
+django-jsonbfield
+django-oauth-toolkit
+django-registration-redux==1.3 # DO NOT UPGRADE TO 1.4 WITHOUT TESTING!
+django-ses
+django-toolbelt
+django-webpack-loader
+django_cachebuster
+django_haystack
+django-loginas==0.2.3
+django_markitup
+django_mptt
+django_reversion
+django_taggit
+djangorestframework
+gunicorn
+jsonfield
+kombu
+lxml
+oauthlib
+psycopg2
+pymongo
+pytest-django
+python_dateutil
+pytz
+raven
+requests
+shortuuid
+six
+sqlparse
+static3
+transifex-client
+tabulate
+unicodecsv
+uWSGI
+whitenoise
+Whoosh==2.7.4
+xlrd
+xlwt
+
+# These packages allow `requests` to support SNI
+pyopenssl
+ndg-httpsclient
+pyasn1

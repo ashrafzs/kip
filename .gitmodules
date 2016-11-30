@@ -1,0 +1,6 @@
+[submodule "locale"]
+	path = locale
+	url = https://github.com/kobotoolbox/form-builder-translations
+[submodule "kip"]
+	path = kip
+	url = https://github.com/ashrafzs/kip.git

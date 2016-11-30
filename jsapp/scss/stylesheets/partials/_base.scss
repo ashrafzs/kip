@@ -1,0 +1,77 @@
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+input[type="text"] {
+    font-family: $preferred_font;
+}
+
+textarea {
+    font-family: $preferred_font;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+:focus {
+    outline: none;
+}
+
+// ::-moz-selection {
+//     background: #b3d4fc;
+//     text-shadow: none;
+// }
+
+// ::selection {
+//     background: #b3d4fc;
+//     text-shadow: none;
+// }

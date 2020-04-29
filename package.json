@@ -54,7 +54,7 @@
     "gulp-mocha-phantomjs": "^0.10.1",
     "immutable": "^3.4.7",
     "jit-grunt": "^0.9.1",
-    "jquery": "^2.1.4",
+    "jquery": "^3.5.0",
     "jquery-ui": "1.10.4",
     "jquery.scrollto": "^2.1.0",
     "json-loader": "^0.5.2",

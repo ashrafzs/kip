@@ -64,7 +64,7 @@
     "lodash._bindcallback": "^3.0.1",
     "lodash.isarguments": "^3.0.4",
     "lodash.isarray": "^3.0.4",
-    "lodash.merge": "^3.3.2",
+    "lodash.merge": "^4.6.2",
     "lodash.restparam": "^3.6.1",
     "material-design-icons": "^2.0.0",
     "material-design-lite": "^1.0.2",
